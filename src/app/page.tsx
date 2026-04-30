@@ -132,7 +132,11 @@ export default function VigenereCipher(): React.ReactNode {
                     placeholder='Digite a palavra-chave...'
                     value={key}
                     onChange={(e) => setKey(e.target.value)}
-                    autoComplete='off'
+                    autoComplete='new-password'
+                    autoCorrect='off'
+                    autoCapitalize='off'
+                    spellCheck={false}
+                    inputMode='url'
                   />
                   <FieldDescription>
                     Apenas letras são usadas como chave
@@ -154,6 +158,11 @@ export default function VigenereCipher(): React.ReactNode {
                     onChange={(e) => setInputText(e.target.value)}
                     rows={4}
                     className='resize-none'
+                    autoComplete='new-password'
+                    autoCorrect='off'
+                    autoCapitalize='off'
+                    spellCheck={false}
+                    inputMode='url'
                   />
                 </Field>
               </FieldGroup>
